@@ -1,0 +1,27 @@
+.root{
+    -fx-background-image: url("https://kartinkin.net/uploads/posts/2021-04/1617302488_52-p-anime-fon-tyan-55.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+#CC{
+    -fx-fill: white;
+}
+#MM{
+    -fx-fill: white;
+}
+#SS{
+    -fx-fill: white;
+}
+#start{
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 10;
+     -fx-background-insets: 0;
+     -fx-text-fill: white;
+
+}
+#start:hover{
+    -fx-background-color: #202020;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
