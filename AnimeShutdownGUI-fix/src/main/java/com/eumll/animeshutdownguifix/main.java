@@ -28,6 +28,9 @@ public class main extends Application {
         Text ss = new Text("СС");
         ss.setId("SS");
 
+        Text timeText = new Text();
+
+
         TextField chas = new TextField();
         TextField minuts = new TextField();
         TextField seconds = new TextField();
@@ -98,6 +101,21 @@ public class main extends Application {
                 }
 
                 int sum = Chas + Min + Sec;
+
+
+
+                for(int i = sum; i != 0; i--){
+
+                    long hour = i / 3600, min = i / 60 % 60, sec = i / 1 % 60;
+                    String time = String.format("%02d:%02d:%02d", hour, min, sec);
+                    timeText.setText(time);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
                 timer.schedule(task, sum);
             }
         });
@@ -117,6 +135,7 @@ public class main extends Application {
         grid.add(minuts, 1, 1);
         grid.add(seconds, 2, 1);
         grid.add(button, 1, 2);
+        grid.add(timeText,3, 1);
         stage.setScene(scene);
         stage.show();
     }
