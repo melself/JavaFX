@@ -25,3 +25,9 @@
     -fx-background-insets: 0;
     -fx-text-fill: white;
 }
+#timeTEXT{
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Open Sans;
+    -fx-font-weight: 700;
+}
