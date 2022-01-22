@@ -1,0 +1,65 @@
+.bgMain{
+    -fx-background-image: url('blueTyan.jpg');
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.bgSecond{
+    -fx-background-color: linear-gradient(to right bottom, #04032c, #0f0d4b);
+}
+
+#SHUTDOWN{
+    -fx-font-family: "Open Sans";
+    -fx-font-weight: bold;
+}
+
+.btnS{
+    -fx-background-color: #240672;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-color: white;
+    -fx-font-family: Open Sans;
+    -fx-font-weight: 200;
+}
+
+.btnS:hover{
+    -fx-background-color: #6F47D7;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-family: Open Sans;
+    -fx-font-weight: 200;
+}
+
+.btnClose{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-background-image: url('closeWhite.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.btnClose:hover{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-background-image: url('closeWhiteH.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.labelTimeTimer{
+    -fx-font-family: Open Sans;
+    -fx-font-weight: 700;
+}
+
+.labelTextTime{
+    -fx-text-fill: white;
+    -fx-font-family: Open Sans;
+    -fx-font-weight: 400;
+}

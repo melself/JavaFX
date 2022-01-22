@@ -23,6 +23,7 @@ public class main extends Application {
     public void start(Stage stage) {
         stage.setTitle("Anime Shutdown GUI");
         stage.getIcons().add(new Image("https://cdn-icons-png.flaticon.com/512/949/949551.png"));
+
         Text cc = new Text("ЧЧ");
         cc.setId("CC");
         Text mm = new Text("ММ");
@@ -101,6 +102,7 @@ public class main extends Application {
         Text n12 = new Text("");
 
         GridPane grid = new GridPane();
+        grid.setId("grid");
         grid.setAlignment(Pos.CENTER);
         grid.setHgap(5);
         grid.setVgap(5);

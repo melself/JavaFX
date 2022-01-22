@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="bgMain" stylesheets="@../../../Assets/blue.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eumll.shutdownpc.mainController">
+   <children>
+      <AnchorPane maxHeight="400.0" maxWidth="200.0" minHeight="400.0" minWidth="200.0" prefHeight="400.0" prefWidth="393.0" styleClass="bgSecond" stylesheets="@../../../Assets/blue.css">
+         <children>
+            <Label fx:id="SHUTDOWN" layoutX="25.0" layoutY="14.0" text="Shutdown PC" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="25.0" layoutY="58.0" mnemonicParsing="false" onAction="#switchToSceneSetTime" prefWidth="150.0" styleClass="btnS" stylesheets="@../../../Assets/blue.css" text="Задать время">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button layoutX="25.0" layoutY="94.0" mnemonicParsing="false" prefWidth="150.0" styleClass="btnS" stylesheets="@../../../Assets/blue.css" text="Задать таймер">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button layoutX="77.0" layoutY="347.0" mnemonicParsing="false" onAction="#switchToSceneSettings" styleClass="btnS" stylesheets="@../../../Assets/blue.css" text="Темы">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+         </children></AnchorPane>
+      <Button layoutX="676.0" layoutY="4.0" mnemonicParsing="false" onMousePressed="#closeApp" prefHeight="20.0" prefWidth="20.0" styleClass="btnClose" stylesheets="@../../../Assets/blue.css">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <TextField fx:id="chas" layoutX="446.0" layoutY="103.0" prefWidth="50.0" promptText="xx" text="0" />
+      <TextField fx:id="minuts" layoutX="511.0" layoutY="103.0" prefWidth="50.0" promptText="xx" text="0" />
+      <TextField fx:id="seconds" layoutX="575.0" layoutY="103.0" prefWidth="50.0" promptText="xx" text="0" />
+      <Label layoutX="463.0" layoutY="85.0" styleClass="labelTextTime" stylesheets="@../../../Assets/blue.css" text="ЧЧ" textFill="WHITE" />
+      <Label layoutX="525.0" layoutY="85.0" styleClass="labelTextTime" stylesheets="@../../../Assets/blue.css" text="ММ" textFill="WHITE" />
+      <Label layoutX="592.0" layoutY="85.0" styleClass="labelTextTime" stylesheets="@../../../Assets/blue.css" text="СС" textFill="WHITE" />
+      <Label fx:id="timeText" layoutX="513.0" layoutY="142.0" prefHeight="18.0" prefWidth="82.0" styleClass="labelTimeTimer" stylesheets="@../../../Assets/blue.css" text="Ожидание" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="startBtn" layoutX="637.0" layoutY="103.0" mnemonicParsing="false" onMousePressed="#timerShutdown" styleClass="btnS" stylesheets="@../../../Assets/blue.css" text="Start" />
+      <Button fx:id="stopBtn" layoutX="637.0" layoutY="139.0" mnemonicParsing="false" styleClass="btnS" stylesheets="@../../../Assets/blue.css" text="Stop" />
+   </children>
+</AnchorPane>
