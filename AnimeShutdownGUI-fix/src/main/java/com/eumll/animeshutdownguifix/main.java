@@ -93,7 +93,7 @@ public class main extends Application {
                 button.setDisable(false);
                 timer.cancel();
                 stage.close();
-                Platform.runLater( () -> new main().start( new Stage() ) );
+                Platform.runLater(() -> new main().start(new Stage()));
             }
         });
 
@@ -143,28 +143,7 @@ public class main extends Application {
         }
         System.exit(0);
     }
-
-    /*public void TimerGUI(){
-        int tSumSec = (digChas * 3600) + (digMin * 60) + digSec;
-        TimerTask countTimer = new TimerTask() {
-            @Override
-            public void run() {
-                for(int i = tSumSec; i != 0; i--) {
-                    long hour = i / 3600, min = i / 60 % 60, sec = i / 1 % 60;
-                    String time = String.format("%02d:%02d:%02d", hour, min, sec);
-                    timeText.setText(time);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        };
-        Timer timerCountTimer = new Timer("Timer Counter");
-        timerCountTimer.schedule(countTimer, tSumSec);
-    }
-*/
+    
     public static void main(String[] args) {
         launch(args);
     }
