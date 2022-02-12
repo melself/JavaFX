@@ -73,7 +73,7 @@ public class main extends Application {
                     stage.setY(event.getScreenY() + yOffset);
                 }
             });
-            stage.getIcons().add(new Image("https://cdn-icons-png.flaticon.com/512/459/459131.png"));
+            stage.getIcons().add(new Image("https://cdn-icons-png.flaticon.com/512/352/352163.png"));
             stage.setResizable(false);
             stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Shutdown PC");
